@@ -30,9 +30,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
 
-        <div className={styles.row}>
+          <div className={styles.row}>
           <a className={styles.button}>
             <div className={styles.row}>
               <Image className={styles.icons} src={github} />
@@ -53,6 +52,7 @@ export default function Home() {
               <p className={styles.buttonTitles}>WhatsApp</p>
             </div>
           </a>
+        </div>
         </div>
       </div>
     </main>

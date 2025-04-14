@@ -23,15 +23,11 @@
   width: 100%;
 }
 
-.content{
-  padding: 40px;
-}
-
 /* Barra de Navegação. */
 .navBar{
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  height: 80vh;
   width: 140px;
   padding: 20px;
   align-items: flex-start;
@@ -44,18 +40,17 @@
   cursor: pointer;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out; /*Controle de velocidade*/
+  animation-timing-function: ease-out;
 }
 
 /* Conteudo Banner */
-
 .perfil {
   width: 260px;
   height: 260px;
   margin-bottom: 10px;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out; /*Controle de velocidade*/
+  animation-timing-function: ease-out; 
   margin-inline-start: -140px;
 }
 
@@ -64,7 +59,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 80vh;
 }
 
 .bannerTitle {
@@ -105,13 +100,14 @@
   align-items: center;
   justify-content: center;
   margin: 20px;
-  height: 44px;
+  height: 40px;
   background-color: #250050;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.3);
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  cursor: pointer;
 }
 
 .icons {
