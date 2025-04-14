@@ -6,55 +6,109 @@
   background-color: #0e0e0e;
 }
 
-.content {
-  width: 100%;
-}
-
 .banner {
   width: 100%;
   height: 100vh;
   background-image: url("./assets/BannerBg.png");
   background-position: center;
   background-size: cover;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 80px;
+  justify-content: space-evenly; */
   box-sizing: border-box;
 }
 
+.container {
+  width: 100%;
+}
+
+.content{
+  padding: 40px;
+}
+
+/* Barra de Navegação. */
+.navBar{
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 140px;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.navButton{ 
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; /*Controle de velocidade*/
+}
+
+/* Conteudo Banner */
+
+.perfil {
+  width: 260px;
+  height: 260px;
+  margin-bottom: 10px;
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; /*Controle de velocidade*/
+  margin-inline-start: -140px;
+}
+
+.bannerContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.bannerTitle {
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  margin-inline-start: -140px;
+  margin-bottom: 10px;
+}
+
+.resume {
+  text-align: center;
+  font-size: 18px;
+  width: 70%;
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; 
+  margin-inline-start: -140px;
+}
+
 .titles {
-  animation-name: textSlide;
+  animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
-.resume {
-  font-size: 18px;
-  width: 50%;
-  animation-name: textSlide;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; /*Controle de velocidade*/
-}
 
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
+/* Botão */
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-inline-end: 20px;
-  height: 40px;
-  gap: 10px;
-  background-color: #ff00aa;
+  margin: 20px;
+  height: 44px;
+  background-color: #250050;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.3);
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -69,11 +123,13 @@
 .buttonTitles {
   font-weight: bold;
   margin-inline-end: 10px;
+  color: #ffffff;
 }
+/* fim botão. */
 
 @media (max-width: 768px) {
   .banner {
-    background-image: url("./assets/BannerBgIp.png");
+    background-image: url("./assets/BannerMobile.png");
     padding: 20px;
   }
 
@@ -83,23 +139,14 @@
   }
 }
 
-@keyframes textSlide {
-  from {
-    margin-left: 85vw;
-    background-color: #ff00aa;
-  }
-  to {
-    margin-left: 0;
-    background-color: #ff00aa;
-  }
-}
+
 
 @keyframes transparent {
   from{
-    background-color: transparent;
+    background-color: #ffffff;
   }
   to{
-    background-color: #ff00aa;
+    background-color: #ffffff;
   }
   
 }
