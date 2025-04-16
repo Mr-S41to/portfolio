@@ -2,7 +2,7 @@ import Image from "next/image";
 //CSS.
 import styles from "./page.module.css";
 //Assets
-import github from "./assets/github.png";
+import github from "./assets/github-icon.png";
 import linkedin from "./assets/linkedin.png";
 import whatsapp from "./assets/whatsapp.png";
 import perfil from "./assets/Perfil.png";
@@ -12,11 +12,16 @@ import Express from "./assets/Express.png";
 import Git from "./assets/Git.png";
 import Github from "./assets/Github.png";
 import MySQL from "./assets/MySQL.png";
+import Merito from "./assets/MeritoCientifico.jpg";
+import Merito2 from "./assets/MeritoCientifico2.jpg";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
+import VSlider from "./components/VSlider";
 
 export default function Home() {
+  const MeritoCientifico = [Merito, Merito2];
+
   return (
     <main className={styles.main}>
       <div className={styles.banner}>
@@ -89,6 +94,11 @@ export default function Home() {
             <WhiteText text="Graduado em Engenharia de Software pela UniEvangélica em 2024, apaixonado por tecnologia e desenvolvimento de soluções que realmente fazem diferença." />
 
             <WhiteText text="Ao longo da minha jornada, atuei em projetos nas áreas de saúde, setor imobiliário, desenvolvendo desde sistemas web completos até aplicações mobile com foco em usabilidade e performance." />
+
+            {/* Merito cientifico. */}
+            <div className={styles.center}>
+              <VSlider images={MeritoCientifico} />
+            </div>
 
             <WhiteText text="Envolvido em pesquisas científicas e no desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
           </div>
