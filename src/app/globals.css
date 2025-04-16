@@ -12,6 +12,11 @@
   font-style: italic;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html, body {
   max-width: 100vw;
@@ -20,11 +25,6 @@ html, body {
 
 body {
   font-family: 'Roboto Mono', monospace;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 a, p, b, h1, h2, h3{
