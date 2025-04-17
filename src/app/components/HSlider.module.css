@@ -3,9 +3,8 @@
   margin: 20px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 1px 1px 1px 0.5px rgba(255, 255, 255, 0.3);
-  height: 400px;
-  width: 280px;
+  height: 270px;
+  width: 480px;
 }
 
 .slideWrapper {
@@ -29,33 +28,10 @@
   object-fit: cover;
 }
 
-.navButton {
-  position: absolute;
-  margin-top: 50%;
-  transform: translateY(-50%);
-  background-color: #f3f3f3;
-  color: #250050;
-  padding: 5px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.navButton:hover {
-  background-color: #f3f3f3
-}
-
-.prev {
-  left: 1rem;
-}
-
-.next {
-  right: 1rem;
-}
-
 .dots {
   position: absolute;
+  bottom: 0px;
+  left: 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -63,6 +39,7 @@
   background-color: #f3f3f3;
   padding-top: 2.5px;
   gap: 5px;
+  z-index: 10;
 }
 
 .dot {

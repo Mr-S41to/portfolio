@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Permite variação entre os pesos de 100 a 900 */
-  font-style: normal;
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/open-sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/open-sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
   font-weight: 100 900;
-  font-style: italic;
+  font-style: normal;
 }
 
 * {
@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Open Sans", sans-serif;
 }
 
 a, p, b, h1, h2, h3{

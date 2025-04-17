@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.content{
+.content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,41 @@
   padding: 20px;
 }
 
-.halfDiv{
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteDiv {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding-top: 0;
+  border-radius: 40px 0 0 0;
+}
+
+.projectsDiv {
+  /* background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 30%, #07050e 100%); */
+  background: linear-gradient(to bottom, #f3f3f3, #07050e);
+  width: 100%;
+}
+
+.halfDiv {
   width: 50%;
 }
+
 /* Barra de Navegação. */
-.navBar{
+.navBar {
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -42,7 +72,7 @@
   justify-content: center;
 }
 
-.navButton{ 
+.navButton {
   font-size: 18px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -53,16 +83,17 @@
 
 /* Conteudo Banner */
 .perfil {
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
   margin-bottom: 10px;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
   margin-inline-start: -140px;
 }
 
-.bannerContent{
+.bannerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +115,7 @@
   width: 70%;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
   margin-inline-start: -140px;
 }
 
@@ -94,40 +125,43 @@
   animation-timing-function: ease-out;
 }
 
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.center{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Logos de Tecnologias */
 .logoContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
-.logo{
-  width: 80px;
-  height: 80px;
-  border-radius: 2px;
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
 }
 
+.miniLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 20px;
+  padding: 5px;
+  padding-inline: 20px;
+  background-color: #250050;
+  border-radius: 10px;
+}
 /* Botão */
 .button {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 20px;
@@ -149,10 +183,43 @@
 
 .buttonTitles {
   font-weight: bold;
+  margin-top: 7.5px;
   margin-inline-end: 10px;
   color: #ffffff;
 }
 /* fim botão. */
+
+.buttonProject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 20px;
+  margin-top: 0;
+  height: 50px;
+  padding: 5px;
+  background-color: #250050;
+  border-radius: 8px;
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.buttonTitleProject {
+  font-weight: bold;
+  margin-top: 7.5px;
+  margin-inline: 10px;
+  color: #ffffff;
+}
+
+.gif{
+  width: 480px;
+  height: 270px;
+  border-radius: 8px;
+  margin: 20px;
+}
 
 @media (max-width: 768px) {
   .banner {
@@ -166,14 +233,11 @@
   }
 }
 
-
-
 @keyframes transparent {
-  from{
+  from {
     background-color: #ffffff;
   }
-  to{
+  to {
     background-color: #ffffff;
   }
-  
 }
