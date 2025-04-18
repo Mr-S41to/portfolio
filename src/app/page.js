@@ -114,7 +114,6 @@ export default function Home() {
           </div>
 
           <div className={styles.halfDiv}>
-            <div className={styles.content}>
               <div className={styles.logoContainer}>
                 <Image className={styles.logo} src={JS} alt="Logo JS" />
                 <Image className={styles.logo} src={React} alt="Logo React" />
@@ -136,7 +135,7 @@ export default function Home() {
               <div className={styles.content}>
                 <WhiteText text="Experiências com tecnologias como React, React Native, Node.js, Python e Express, conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile." />
               </div>
-            </div>
+
             <div className={styles.whiteDiv}>
               <div className={styles.content}>
                 <BlackSubTitle subTitle={`<Projetos />`} />
@@ -211,7 +210,7 @@ export default function Home() {
                   />
                 </div>
 
-                <a className={styles.buttonProject}>
+                <a className={styles.buttonProject} href="https://loysepogiam.com" target="_blank">
                     <p className={styles.buttonTitleProject}>Ver Projeto</p>
                 </a>
               </div>
