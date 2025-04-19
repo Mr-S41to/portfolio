@@ -270,6 +270,34 @@ export default function Home() {
                   <p className={styles.buttonTitleProject}>Ver Projeto</p>
                 </a>
               </div>
+
+              <WhiteBoldText text="Teste de PASAT (Paced Auditory Serial Addition Task)" />
+              <WhiteText text="Este projeto teve como objetivo desenvolver a tradução do teste PASAT para o português brasileiro, para a aplicação do teste em pacientes que falam português. E teste foi desnevolvido em apoio a um grupo de pesquisa do Curso de Medicina da UniEvangélica." />
+              <WhiteText text="O objetivo é que o usuário some o número atual com o número anterior e selecione a resposta correta clicando no botão correspondente. Cada número é gerado e pronunciado em um intervalo inicial de 2 segundos, criando um ritmo constante para as interações. O teste avalia a capacidade de realizar operações mentais rápidas e lidar com o estresse do tempo limitado e da pressão gerada por interações contínuas." />
+
+              <div className={styles.center}>
+                <Image src={Loyse} alt="Loyse" className={styles.gif} />
+              </div>
+
+              <WhiteText text="Desenvolvido com React JS, SpeechSynthesis para falar os numeros do teste." />
+              <WhiteBoldText text="Tecnologias:" />
+              <div className={styles.row}>
+                <div className={styles.iconBox}>
+                  <Image
+                    className={styles.miniLogo}
+                    src={React}
+                    alt="Logo React"
+                  />
+                </div>
+
+                <a
+                  className={styles.buttonProject}
+                  href="https://pasat.onrender.com"
+                  target="_blank"
+                >
+                  <p className={styles.buttonTitleProject}>Ver Projeto</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
