@@ -17,6 +17,8 @@ import Python from "./assets/Python.png";
 import Merito from "./assets/MeritoCientifico.jpg";
 import Merito2 from "./assets/MeritoCientifico2.jpg";
 import Loyse from "./assets/Loyse.gif";
+import Android from "./assets/Android.png";
+import iOS from "./assets/iOS.png";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -114,27 +116,23 @@ export default function Home() {
           </div>
 
           <div className={styles.halfDiv}>
-              <div className={styles.logoContainer}>
-                <Image className={styles.logo} src={JS} alt="Logo JS" />
-                <Image className={styles.logo} src={React} alt="Logo React" />
-                <Image
-                  className={styles.logo}
-                  src={Express}
-                  alt="Logo Express"
-                />
-                <Image className={styles.logo} src={MySQL} alt="Logo MySQL" />
-                <Image className={styles.logo} src={Git} alt="Logo Git" />
-                <Image className={styles.logo} src={Github} alt="Logo Github" />
-                <Image
-                  className={styles.logo}
-                  src={WordPress}
-                  alt="Logo WordPress"
-                />
-              </div>
+            <div className={styles.logoContainer}>
+              <Image className={styles.logo} src={JS} alt="Logo JS" />
+              <Image className={styles.logo} src={React} alt="Logo React" />
+              <Image className={styles.logo} src={Express} alt="Logo Express" />
+              <Image className={styles.logo} src={MySQL} alt="Logo MySQL" />
+              <Image className={styles.logo} src={Git} alt="Logo Git" />
+              <Image className={styles.logo} src={Github} alt="Logo Github" />
+              <Image
+                className={styles.logo}
+                src={WordPress}
+                alt="Logo WordPress"
+              />
+            </div>
 
-              <div className={styles.content}>
-                <WhiteText text="Experiências com tecnologias como React, React Native, Node.js, Python e Express, conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile." />
-              </div>
+            <div className={styles.content}>
+              <WhiteText text="Experiências com tecnologias como React, React Native, Node.js, Python e Express, conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile." />
+            </div>
 
             <div className={styles.whiteDiv}>
               <div className={styles.content}>
@@ -146,36 +144,37 @@ export default function Home() {
                 <div className={styles.center}>
                   <HSlider images={MeritoCientifico} />
                 </div>
-                <BlackText text="O sistema também conta com um modulo de Gerência de Vistorias e Emissão de Laudos." />
+                <BlackText text="O sistema também conta com um modulo de Gerência de Vistorias e Emissão de Laudos. Desenvolvido para ser hosteado em ambiente Windows em rede local a pedido da empresa via Docker" />
 
                 <BlackBoldText text="Tecnologias:" />
-               <div className={styles.row}>
-               <div className={styles.iconBox}>
-                  <Image
-                    className={styles.miniLogo}
-                    src={Python}
-                    alt="Logo Python"
-                  />
-                  <Image
-                    className={styles.miniLogo}
-                    src={React}
-                    alt="Logo React"
-                  />
-                  <Image
-                    className={styles.miniLogo}
-                    src={Express}
-                    alt="Logo Express"
-                  />
-                  <Image
-                    className={styles.miniLogo}
-                    src={MySQL}
-                    alt="Logo MySQL"
-                  />
+                <div className={styles.row}>
+                  <div className={styles.iconBox}>
+                    <Image
+                      className={styles.miniLogo}
+                      src={Python}
+                      alt="Logo Python"
+                    />
+                    <Image
+                      className={styles.miniLogo}
+                      src={React}
+                      alt="Logo React"
+                    />
+                    <Image
+                      className={styles.miniLogo}
+                      src={Express}
+                      alt="Logo Express"
+                    />
+                    <Image
+                      className={styles.miniLogo}
+                      src={MySQL}
+                      alt="Logo MySQL"
+                    />
+                  </div>
+                  <div className={styles.halfDiv}>
+                    <p>{` `}</p>
+                  </div>
                 </div>
-                <div className={styles.halfDiv}>
-                  <p>{` `}</p>	
-                </div>
-               </div>
+                <BlackText text="Desenvolvido com React para a interface Web, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL. O sistema utiliza Python com a biblioteca Pandas para realizar a leitura dos aquivos PDF para tratar os dados em texto e modelar os débitos em data frames para fazer o cruzamento de dados dos imoveis dos extratos com o banco de dados da empresa par atribuir a responsabilidade dos débitos a cliente ou empresa e emitir Relatórios de Dívidas em Excel." />
               </div>
             </div>
           </div>
@@ -187,8 +186,60 @@ export default function Home() {
           <div className={styles.halfDiv}>
             <div className={styles.content}>
               <BlackBoldText text="ZenKai - Saúde Mental" />
+
+              <BlackText text="Plataforma de Telemedicina focada em Saúde Mental." />
+              <BlackText text="Desenvolvida para atender a demanda de atendimento online para Psicologia e Psiquiatria." />
+              <BlackText text="Web e Mobile com funcionalidades de agendamento, avaliações emocionais e diário de humor." />
+
+              <div className={styles.center}>
+                <Image src={Loyse} alt="Loyse" className={styles.gif} />
+              </div>
+
+              <WhiteText text="Inicialmente chamado de Psique, o projeto foi iniciado durante o programa de Iniciação Tecnológica da UniEvangélica, a ideia surgiu da percepção da dificuldade de uso da tecnologia pela terapeuta particular durante a pandemia de Covid-19." />
+              <WhiteText text="Na virada de 2024 para 2025, o projeto foi selecionado para participar do NIIS II do HubGoias, na imersão de negócios onde foi reestruturado e renomeado para ZenKai." />
+
+              <div className={styles.center}>
+                <HSlider images={MeritoCientifico} />
+              </div>
+
+              <WhiteBoldText text="Tecnologias:" />
+              <div className={styles.row}>
+                <div className={styles.iconBox}>
+                  <Image
+                    className={styles.miniLogo}
+                    src={React}
+                    alt="Logo React, React Native"
+                  />
+                  <Image
+                    className={styles.miniLogo}
+                    src={Android}
+                    alt="Logo Android"
+                  />
+                  <Image className={styles.miniLogo} src={iOS} alt="Logo iOS" />
+                  <Image
+                    className={styles.miniLogo}
+                    src={Express}
+                    alt="Logo Express"
+                  />
+                  <Image
+                    className={styles.miniLogo}
+                    src={MySQL}
+                    alt="Logo MySQL"
+                  />
+                </div>
+
+                <a
+                  className={styles.buttonProject}
+                  // href=""
+                  // target="_blank"
+                >
+                  <p className={styles.buttonTitleProject}>Ver Projeto</p>
+                </a>
+              </div>
+              <WhiteText text="Desenvolvido com React para a interface Web para profissionais, React Native para um App Mobile, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL." />
             </div>
           </div>
+
           <div className={styles.halfDiv}>
             <div className={styles.content}>
               <BlackBoldText text="Loyse Pogiam - Landing Page" />
@@ -198,7 +249,8 @@ export default function Home() {
                 <Image src={Loyse} alt="Loyse" className={styles.gif} />
               </div>
 
-              <WhiteText text="O site conta com Blog e otmização de SEO. Desenvolvido colaborativamente com a psicologa em WordPress com Elementor." />
+              <WhiteText text="O site conta com Blog e otmização de SEO. Desenvolvido colaborativamente com a psicologa em WordPress com Elementor. O site conta com responsividade em dimensões para Web, Tablets e SmartPhones." />
+              <WhiteText text="O desenvolvimento colaorativo contou com artes feitas pela propria Loyse dando carater mais pessoal ao site." />
 
               <WhiteBoldText text="Tecnologias:" />
               <div className={styles.row}>
@@ -210,8 +262,12 @@ export default function Home() {
                   />
                 </div>
 
-                <a className={styles.buttonProject} href="https://loysepogiam.com" target="_blank">
-                    <p className={styles.buttonTitleProject}>Ver Projeto</p>
+                <a
+                  className={styles.buttonProject}
+                  href="https://loysepogiam.com"
+                  target="_blank"
+                >
+                  <p className={styles.buttonTitleProject}>Ver Projeto</p>
                 </a>
               </div>
             </div>
