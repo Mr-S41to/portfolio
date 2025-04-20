@@ -14,14 +14,6 @@ export default function VSlider({ images }) {
     return () => clearInterval(timer);
   }, [length]);
 
-  const nextSlide = () => {
-    setCurrent((current + 1) % length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((current - 1 + length) % length);
-  };
-
   return (
     <div className={styles.container}>
       <div className={styles.slideWrapper}>
@@ -40,18 +32,6 @@ export default function VSlider({ images }) {
           </div>
         ))}
       </div>
-
-      {/* Navegação */}
-      <button
-        onClick={prevSlide}
-        className={`${styles.navButton} ${styles.prev}`}
-      >
-      </button>
-      <button
-        onClick={nextSlide}
-        className={`${styles.navButton} ${styles.next}`}
-      >
-      </button>
 
       {/* Dots */}
       <div className={styles.dots}>

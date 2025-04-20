@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import github from "./assets/github-icon.png";
 import linkedin from "./assets/linkedin.png";
 import whatsapp from "./assets/whatsapp.png";
+import eMail from "./assets/eMail.png";
 import perfil from "./assets/Perfil.png";
 import JS from "./assets/JS.png";
 import React from "./assets/React.png";
@@ -19,6 +20,13 @@ import Merito2 from "./assets/MeritoCientifico2.jpg";
 import Loyse from "./assets/Loyse.gif";
 import Android from "./assets/Android.png";
 import iOS from "./assets/iOS.png";
+import NativeBase from "./assets/NativeBase.png";
+import PhotoTom1 from "./assets/PhotoTom1.jpg";
+import PhotoTom2 from "./assets/PhotoTom2.jpg";
+import PhotoTom3 from "./assets/PhotoTom3.jpg";
+import PhotoTom4 from "./assets/PhotoTom4.jpg";
+import PhotoTom5 from "./assets/PhotoTom5.jpg";
+import Tech from "./assets/Tech.png";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -91,6 +99,17 @@ export default function Home() {
                 <p className={styles.buttonTitles}>WhatsApp</p>
               </div>
             </a>
+
+            <a className={styles.button}>
+              <div className={styles.row}>
+                <Image
+                  className={styles.icons}
+                  src={eMail}
+                  alt="Botão E-Mail"
+                />
+                <p className={styles.buttonTitles}>E-Mail</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -150,13 +169,13 @@ export default function Home() {
                   <div className={styles.iconBox}>
                     <Image
                       className={styles.miniLogo}
-                      src={Python}
-                      alt="Logo Python"
+                      src={React}
+                      alt="Logo React"
                     />
                     <Image
                       className={styles.miniLogo}
-                      src={React}
-                      alt="Logo React"
+                      src={Python}
+                      alt="Logo Python"
                     />
                     <Image
                       className={styles.miniLogo}
@@ -207,6 +226,11 @@ export default function Home() {
                     className={styles.miniLogo}
                     src={React}
                     alt="Logo React, React Native"
+                  />
+                  <Image
+                    className={styles.miniLogo}
+                    src={NativeBase}
+                    alt="Logo Native Base"
                   />
                   <Image
                     className={styles.miniLogo}
@@ -286,6 +310,11 @@ export default function Home() {
                     src={React}
                     alt="Logo React"
                   />
+                  <Image
+                    className={styles.miniLogo}
+                    src={JS}
+                    alt="Logo JavaScript"
+                  />
                 </div>
 
                 <a
@@ -301,12 +330,130 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.projectsContacts}>
+      <div className={styles.projectsContatcs}>
         <div className={styles.content}>
           <WhiteBoldText text="Photo-Tom" />
           <div className={styles.halfDiv}>
             <WhiteText text="Aplicativo para detecção de Fototipos de Pele. Desenvolvido em 2023, neste projeto atuei como Dev. Mobile. O desenvolvimento utilizou o React Native com Expo e a biblioteca de componentes Native Base." />
             <WhiteText text="O aplicativo utiliza a câmera do celular para capturar a imagem da pele do usuário para comparação com uma palheta de cores de pele, o usuário responde um questionário para determinar o fototipo." />
+          </div>
+          <div className={styles.row}>
+            <Image
+              className={styles.photoTom}
+              src={PhotoTom1}
+              alt="Photo Tom 1"
+            />
+            <Image
+              className={styles.photoTom}
+              src={PhotoTom2}
+              alt="Photo Tom 2"
+            />
+            <Image
+              className={styles.photoTom}
+              src={PhotoTom3}
+              alt="Photo Tom 3"
+            />
+            <Image
+              className={styles.photoTom}
+              src={PhotoTom4}
+              alt="Photo Tom 4"
+            />
+            <Image
+              className={styles.photoTom}
+              src={PhotoTom5}
+              alt="Photo Tom 5"
+            />
+          </div>
+
+          <div className={styles.halfDiv}>
+            <WhiteBoldText text="Tecnologias:" />
+            <div className={styles.iconBox}>
+              <Image
+                className={styles.miniLogo}
+                src={React}
+                alt="Logo React, React Native"
+              />
+              <Image
+                className={styles.miniLogo}
+                src={NativeBase}
+                alt="Logo Native Base"
+              />
+              <Image
+                className={styles.miniLogo}
+                src={Android}
+                alt="Logo Android"
+              />
+              <Image className={styles.miniLogo} src={iOS} alt="Logo iOS" />
+            </div>
+          </div>
+        </div>
+        <div className={styles.content}>
+          <p> </p>
+        </div>
+        <div className={styles.content}>
+          <SubTitle subTitle={`<Contatos />`} />
+          <WhiteText text="Entre em contato e confira meu Github por:" />
+        </div>
+
+        <div className={styles.row}>
+          <div className={styles.halfDiv}>
+            <div className={styles.center}>
+              <div className={styles.glass}>
+                <a className={styles.buttonContact}>
+                  <div className={styles.row}>
+                    <p className={styles.buttonTitleContact}>E-Mail</p>
+                    <Image
+                      className={styles.iconsContact}
+                      src={eMail}
+                      alt="Botão E-Mail"
+                    />
+                  </div>
+                </a>
+
+                <a className={styles.buttonContact}>
+                  <div className={styles.row}>
+                    <p className={styles.buttonTitleContact}>WhatsApp</p>
+                    <Image
+                      className={styles.iconsContact}
+                      src={whatsapp}
+                      alt="Botão WhatsApp"
+                    />
+                  </div>
+                </a>
+
+                <a className={styles.buttonContact}>
+                  <div className={styles.row}>
+                    <p className={styles.buttonTitleContact}>LinkedIn </p>
+                    <Image
+                      className={styles.iconsContact}
+                      src={linkedin}
+                      alt="Botão LinkedIn"
+                    />
+                  </div>
+                </a>
+
+                <a className={styles.buttonContact}>
+                  <div className={styles.row}>
+                    <p className={styles.buttonTitleContact}>Github</p>
+                    <Image
+                      className={styles.iconsContactGit}
+                      src={github}
+                      alt="Botão Github"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.halfDiv}>
+            <div className={styles.whiteDiv}>
+              <div className={styles.content}>
+              <div className={styles.center}>
+                <Image className={styles.asset} src={Tech} alt="Ilustração" />
+              </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
