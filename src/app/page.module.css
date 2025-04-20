@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0c0c0c;
+  background-color: #1b1b1b;
 }
 
 .banner {
@@ -45,16 +59,22 @@
 }
 
 .whiteDiv {
-  background-color: #f3f3f3;
-  width: 100%;
+  background-color: #ffffff;
   padding-top: 0;
   border-radius: 40px 0 0 0;
 }
 
 .projectsDiv {
-  /* background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 30%, #07050e 100%); */
-  background: linear-gradient(to bottom, #f3f3f3, #07050e);
+  /* background: linear-gradient(to bottom, #1b1b1b, #7700ff); */
+  background: linear-gradient(to bottom, #1b1b1b 0%, #1b1b1b 25%, #7700ff 100%);
   width: 100%;
+  padding-top: 20PX;
+}
+
+.projectsContatcs {
+  background: linear-gradient(to bottom, #1b1b1b 0%,  #0c0c0c 50%, #000000 100%);
+  width: 100%;
+  padding-top: 20PX;
 }
 
 .halfDiv {
@@ -74,6 +94,7 @@
 
 .navButton {
   font-size: 18px;
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 10px;
   cursor: pointer;
   animation-name: transparent;
@@ -102,6 +123,7 @@
 }
 
 .bannerTitle {
+  font-family: "Roboto Mono", monospace;
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -110,6 +132,7 @@
 }
 
 .resume {
+  font-family: "Roboto Mono", monospace;
   text-align: center;
   font-size: 18px;
   width: 70%;
@@ -119,11 +142,6 @@
   margin-inline-start: -140px;
 }
 
-.titles {
-  animation-name: transparent;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
 
 /* Logos de Tecnologias */
 .logoContainer {
@@ -158,6 +176,7 @@
   background-color: #250050;
   border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 1px 0.5px rgba(32, 32, 32, 0.5);
 }
 /* Botão */
 .button {
@@ -169,7 +188,7 @@
   height: 40px;
   background-color: #250050;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 1px 0.5px rgba(65, 65, 65, 0.3);
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -203,6 +222,7 @@
   background-color: #250050;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 1px 1px 1px 0.5px rgba(65, 65, 65, 0.3);
 }
 
 .buttonTitleProject {

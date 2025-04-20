@@ -28,7 +28,6 @@ import BlackText from "./components/BlackText";
 import BlackBoldText from "./components/BlackBoldText";
 import HSlider from "./components/HSlider";
 import WhiteBoldText from "./components/WitheBoldText";
-import PurpleSubTitle from "./components/PurpleSubTitle";
 
 export default function Home() {
   const MeritoCientifico = [Merito, Merito2];
@@ -185,21 +184,20 @@ export default function Home() {
         <div className={styles.row}>
           <div className={styles.halfDiv}>
             <div className={styles.content}>
-              <BlackBoldText text="ZenKai - Saúde Mental" />
+              <WhiteBoldText text="ZenKai - Saúde Mental" />
 
-              <BlackText text="Plataforma de Telemedicina focada em Saúde Mental." />
-              <BlackText text="Desenvolvida para atender a demanda de atendimento online para Psicologia e Psiquiatria." />
-              <BlackText text="Web e Mobile com funcionalidades de agendamento, avaliações emocionais e diário de humor." />
+              <WhiteText text="Plataforma de Telemedicina focada em Saúde Mental." />
+              <WhiteText text="Desenvolvida para atender a demanda de atendimento online para Psicologia e Psiquiatria. Web e Mobile com funcionalidades de agendamento, avaliações emocionais e diário de humor." />
 
               <div className={styles.center}>
-                <Image src={Loyse} alt="Loyse" className={styles.gif} />
+                <HSlider images={MeritoCientifico} />
               </div>
 
               <WhiteText text="Inicialmente chamado de Psique, o projeto foi iniciado durante o programa de Iniciação Tecnológica da UniEvangélica, a ideia surgiu da percepção da dificuldade de uso da tecnologia pela terapeuta particular durante a pandemia de Covid-19." />
               <WhiteText text="Na virada de 2024 para 2025, o projeto foi selecionado para participar do NIIS II do HubGoias, na imersão de negócios onde foi reestruturado e renomeado para ZenKai." />
 
               <div className={styles.center}>
-                <HSlider images={MeritoCientifico} />
+                <Image src={Loyse} alt="Loyse" className={styles.gif} />
               </div>
 
               <WhiteBoldText text="Tecnologias:" />
@@ -233,7 +231,7 @@ export default function Home() {
                   // href=""
                   // target="_blank"
                 >
-                  <p className={styles.buttonTitleProject}>Ver Projeto</p>
+                  <p className={styles.buttonTitleProject}>Em Breve</p>
                 </a>
               </div>
               <WhiteText text="Desenvolvido com React para a interface Web para profissionais, React Native para um App Mobile, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL." />
@@ -242,8 +240,8 @@ export default function Home() {
 
           <div className={styles.halfDiv}>
             <div className={styles.content}>
-              <BlackBoldText text="Loyse Pogiam - Landing Page" />
-              <BlackText text="Landing Page para apresentação profissional de psicóloga." />
+              <WhiteBoldText text="Loyse Pogiam - Landing Page" />
+              <WhiteText text="Landing Page para apresentação profissional de psicóloga." />
 
               <div className={styles.center}>
                 <Image src={Loyse} alt="Loyse" className={styles.gif} />
@@ -299,6 +297,16 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.projectsContacts}>
+        <div className={styles.content}>
+          <WhiteBoldText text="Photo-Tom" />
+          <div className={styles.halfDiv}>
+            <WhiteText text="Aplicativo para detecção de Fototipos de Pele. Desenvolvido em 2023, neste projeto atuei como Dev. Mobile. O desenvolvimento utilizou o React Native com Expo e a biblioteca de componentes Native Base." />
+            <WhiteText text="O aplicativo utiliza a câmera do celular para capturar a imagem da pele do usuário para comparação com uma palheta de cores de pele, o usuário responde um questionário para determinar o fototipo." />
           </div>
         </div>
       </div>
