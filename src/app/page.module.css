@@ -102,6 +102,9 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+.navButton:hover {
+ scale: 1.05;
+}
 
 /* Conteudo Banner */
 .perfil {
@@ -160,9 +163,11 @@
 }
 
 .miniLogo {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .iconBox {
@@ -198,8 +203,9 @@
 }
 
 .icons {
-  width: 25px;
-  height: auto;
+  margin-top: 4px;
+  width: 22px;
+  height: 22px;
   margin-inline: 10px;
 }
 
@@ -208,6 +214,13 @@
   margin-top: 7.5px;
   margin-inline-end: 10px;
   color: #ffffff;
+}
+.button:hover {
+  scale: 1.05;
+  background-color: #ffffff;
+  .buttonTitles {
+    color: #250050;
+  }
 }
 /* fim botão. */
 
@@ -233,6 +246,13 @@
   margin-inline: 10px;
   color: #ffffff;
 }
+.buttonProject:hover {
+  scale: 1.05;
+  background-color: #ffffff;
+  .buttonTitleProject {
+    color: #250050;
+  }
+}
 
 .gif{
   width: 480px;
@@ -255,7 +275,7 @@
   justify-content: center;
   margin: 20px;
   height: 320px;
-  width: 50%;
+  width: 70%;
   background: rgba(25, 0, 65, 0.5);
   border-radius: 32px;
   padding: 20px;
@@ -280,16 +300,28 @@
   animation-timing-function: ease-out;
   cursor: pointer;
 }
+.buttonContact:hover {
+  scale: 1.05;
+  background-color: #ffffff;
+  .buttonTitleContact {
+    color: #1b1b1b;
+  }
+  .iconsContactGit {
+    filter: invert(0);
+  }
+}
 
 .iconsContact {
-  width: 28px;
+  width: 24px;
   height: auto;
+  padding-top: 3.5px;
 }
 
 .iconsContactGit {
   width: 24px;
   height: auto;
   filter: invert(1);
+  padding-top: 3.5px;
 }
 
 .buttonTitleContact {
@@ -300,9 +332,56 @@
 }
 
 .asset{
-  width: 320px;
+  margin: 40px;
+  width: 280px;
   height: auto;
   align-self: center;
+}
+
+.buttonBlackCV {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px;
+  width: 50%;
+  height: 48px;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 0.5px rgba(65, 65, 65, 0.3);
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.buttonBlackCV:hover {
+  scale: 1.05;
+  background-color: #250050;
+}
+
+.buttonTitleBlack {
+  font-weight: bold;
+  margin-top: 7.5px;
+  color: #ffffff;
+  margin-inline: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.footerText {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1b1b1b;
 }
 
 @media (max-width: 768px) {

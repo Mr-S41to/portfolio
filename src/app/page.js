@@ -449,12 +449,24 @@ export default function Home() {
           <div className={styles.halfDiv}>
             <div className={styles.whiteDiv}>
               <div className={styles.content}>
-              <div className={styles.center}>
-                <Image className={styles.asset} src={Tech} alt="Ilustração" />
-              </div>
+                <div className={styles.center}>
+                  <Image className={styles.asset} src={Tech} alt="Ilustração" />
+
+                  <a className={styles.buttonBlackCV}>
+                    <div className={styles.row}>
+                      <p className={styles.buttonTitleBlack}>Baixar CV</p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className={styles.footer}>
+          <p className={styles.footerText}>
+            Desenvolvido por Matheus N. Saito - 2025
+          </p>
         </div>
       </div>
     </main>
