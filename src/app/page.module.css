@@ -86,18 +86,19 @@
 /* Barra de Navegação. */
 .navBar {
   display: flex;
-  flex-direction: column;
-  height: 60vh;
-  width: 140px;
-  padding: 20px;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 10;
+  background-color: #250050;
 }
 
 .navButton {
   font-size: 18px;
   font-family: "Roboto Mono", monospace;
-  margin-bottom: 10px;
   cursor: pointer;
   animation-name: transparent;
   transition: all 0.5s ease;
@@ -117,7 +118,6 @@
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  margin-inline-start: -140px;
 }
 
 .bannerContent {
@@ -133,7 +133,6 @@
   animation-name: transparent;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  margin-inline-start: -140px;
   margin-bottom: 10px;
 }
 
@@ -144,8 +143,7 @@
   width: 70%;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
-  margin-inline-start: -140px;
+  animation-timing-function: ease-out; 
 }
 
 /* Logos de Tecnologias */
@@ -400,6 +398,43 @@
   color: #ffffff;
   margin-inline: 20px;
 }
+
+
+.buttonWhiteCV {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px;
+  width: 50%;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 0.5px rgba(65, 65, 65, 0.3);
+  animation-name: transparent;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.buttonWhiteCV:hover {
+  scale: 1.05;
+  transition: all 0.5s ease;
+  background-color: #7700ff;
+  .buttonTitleWhite {
+    color: #ffffff;
+  }
+}
+
+.buttonTitleWhite {
+  font-weight: bold;
+  margin-top: 7.5px;
+  color: #1b1b1b;
+  margin-inline: 20px;
+}
+
 
 .footer {
   display: flex;

@@ -60,7 +60,6 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.banner}>
         <div className={styles.container}>
-          <div className={styles.row}>
             <div className={styles.navBar}>
               <a className={styles.navButton}>Sobre</a>
               <a className={styles.navButton}>Projetos</a>
@@ -80,7 +79,6 @@ export default function Home() {
                 {`Graduado em Engenharia de Software pela Universidade Evangélica de Goias - Uni Evangélica. Atuo como Desenvolvedor FullStack e Mobile desde 2021, desenvolvendo soluções para área da saúde e setor imobiliário com as stacks de NodeJS React, React Native Express e Python com o Flask.  \nCom participação em pesquisas cientificas e de inovação.`}
               </p>
             </div>
-          </div>
 
           <div className={styles.row}>
             <a className={styles.button}>
@@ -146,6 +144,13 @@ export default function Home() {
               </div>
 
               <WhiteText text="Envolvido em pesquisas científicas e no desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
+           
+              <a className={styles.buttonWhiteCV}>
+                    <div className={styles.row}>
+                      <p className={styles.buttonTitleWhite}>Baixar CV</p>
+                    </div>
+                  </a>
+           
             </div>
           </div>
 
