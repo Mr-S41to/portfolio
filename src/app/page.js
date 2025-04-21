@@ -337,7 +337,7 @@ export default function Home() {
             <WhiteText text="Aplicativo para detecção de Fototipos de Pele. Desenvolvido em 2023, neste projeto atuei como Dev. Mobile. O desenvolvimento utilizou o React Native com Expo e a biblioteca de componentes Native Base." />
             <WhiteText text="O aplicativo utiliza a câmera do celular para capturar a imagem da pele do usuário para comparação com uma palheta de cores de pele, o usuário responde um questionário para determinar o fototipo." />
           </div>
-          <div className={styles.row}>
+          <div className={styles.imageBox}>
             <Image
               className={styles.photoTom}
               src={PhotoTom1}

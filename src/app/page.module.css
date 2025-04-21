@@ -1,13 +1,15 @@
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; 
+  font-family: "Roboto Mono";
+  src: url("/assets/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('/assets/fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "Roboto Mono";
+  src: url("/assets/fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
 }
@@ -56,7 +58,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .whiteDiv {
@@ -69,13 +70,13 @@
   /* background: linear-gradient(to bottom, #1b1b1b, #7700ff); */
   background: linear-gradient(to bottom, #1b1b1b 0%, #1b1b1b 25%, #7700ff 100%);
   width: 100%;
-  padding-top: 20PX;
+  padding-top: 20px;
 }
 
 .projectsContatcs {
-  background: linear-gradient(to bottom, #1b1b1b 0%,  #0c0c0c 50%, #000000 100%);
+  background: linear-gradient(to bottom, #1b1b1b 0%, #0c0c0c 50%, #000000 100%);
   width: 100%;
-  padding-top: 20PX;
+  padding-top: 20px;
 }
 
 .halfDiv {
@@ -86,7 +87,7 @@
 .navBar {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   width: 140px;
   padding: 20px;
   align-items: flex-start;
@@ -99,11 +100,12 @@
   margin-bottom: 10px;
   cursor: pointer;
   animation-name: transparent;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
 .navButton:hover {
- scale: 1.05;
+  scale: 1.05;
+  transition: all 0.5s ease;
 }
 
 /* Conteudo Banner */
@@ -146,7 +148,6 @@
   margin-inline-start: -140px;
 }
 
-
 /* Logos de Tecnologias */
 .logoContainer {
   width: 100%;
@@ -176,14 +177,21 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  gap: 20px;
+  gap: 10px;
   padding: 5px;
   padding-inline: 20px;
   background-color: #250050;
   border-radius: 10px;
-  margin-bottom: 20px;
   box-shadow: 1px 1px 1px 0.5px rgba(32, 32, 32, 0.5);
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
+.iconBox:hover {
+  scale: 1.05;
+  transition: all 0.5s ease;
+  background-color: #7700ff;
+}
+
 /* Botão */
 .button {
   display: flex;
@@ -200,6 +208,8 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
   cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
 
 .icons {
@@ -217,6 +227,7 @@
 }
 .button:hover {
   scale: 1.05;
+  transition: all 0.5s ease;
   background-color: #ffffff;
   .buttonTitles {
     color: #250050;
@@ -230,14 +241,15 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  margin: 20px;
-  margin-top: 0;
+  margin-inline: 20px;
   height: 50px;
   padding: 5px;
   background-color: #250050;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 1px 1px 1px 0.5px rgba(65, 65, 65, 0.3);
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
 
 .buttonTitleProject {
@@ -248,24 +260,40 @@
 }
 .buttonProject:hover {
   scale: 1.05;
+  transition: all 0.5s ease;
   background-color: #ffffff;
   .buttonTitleProject {
     color: #250050;
   }
 }
 
-.gif{
+.gif {
   width: 480px;
   height: 270px;
   border-radius: 8px;
-  margin: 40px;
+  margin: 20px;
+  transition: all 0.7s ease;
+  transform: scale(1);
+}
+.gif:hover{
+  scale: 1.5;
+  transition: all 0.7s ease;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-.photoTom{
-  width: 10% ;
+.photoTom {
+  width: 12%;
   height: auto;
   margin: 40px;
-  border-radius: 8px;
+  border-radius: 8px;;
+}
+.imageBox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .glass {
@@ -290,7 +318,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 10px;
-  width: 50%;
+  width: 75%;
   height: 48px;
   background-color: #250050;
   border-radius: 8px;
@@ -299,9 +327,12 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
   cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
 .buttonContact:hover {
   scale: 1.05;
+  transition: all 0.5s ease;
   background-color: #ffffff;
   .buttonTitleContact {
     color: #1b1b1b;
@@ -331,7 +362,7 @@
   margin-inline: 20px;
 }
 
-.asset{
+.asset {
   margin: 40px;
   width: 280px;
   height: auto;
@@ -353,10 +384,13 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
   cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
 
 .buttonBlackCV:hover {
   scale: 1.05;
+  transition: all 0.5s ease;
   background-color: #250050;
 }
 
@@ -401,6 +435,6 @@
     background-color: #ffffff;
   }
   to {
-    background-color: #ffffff;
+    background-color: #1b1b1b;
   }
 }
