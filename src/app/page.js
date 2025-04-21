@@ -27,6 +27,13 @@ import PhotoTom3 from "./assets/PhotoTom3.jpg";
 import PhotoTom4 from "./assets/PhotoTom4.jpg";
 import PhotoTom5 from "./assets/PhotoTom5.jpg";
 import Tech from "./assets/Tech.png";
+import SP1 from "./assets/SP1.png";
+import SP2 from "./assets/SP2.png";
+import SP3 from "./assets/SP3.png";
+import SP4 from "./assets/SP4.png";
+import SP5 from "./assets/SP5.png";
+import SP6 from "./assets/SP6.png";
+import SP7 from "./assets/SP7.png";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -39,6 +46,15 @@ import WhiteBoldText from "./components/WitheBoldText";
 
 export default function Home() {
   const MeritoCientifico = [Merito, Merito2];
+  const SaintPaul = [
+    SP1,
+    SP2,
+    SP3,
+    SP4,
+    SP5,
+    SP6,
+    SP7
+  ];
 
   return (
     <main className={styles.main}>
@@ -160,7 +176,7 @@ export default function Home() {
 
                 <BlackText text="Sistema Web para Análise de Débitos e cruzamento de dados através de PDFs emitidos pela prefeitura de Anápolis." />
                 <div className={styles.center}>
-                  <HSlider images={MeritoCientifico} />
+                  <HSlider images={SaintPaul} />
                 </div>
                 <BlackText text="O sistema também conta com um modulo de Gerência de Vistorias e Emissão de Laudos. Desenvolvido para ser hosteado em ambiente Windows em rede local a pedido da empresa via Docker" />
 
