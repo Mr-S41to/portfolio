@@ -34,6 +34,14 @@ import SP4 from "./assets/SP4.png";
 import SP5 from "./assets/SP5.png";
 import SP6 from "./assets/SP6.png";
 import SP7 from "./assets/SP7.png";
+import Zen1 from "./assets/1.png";
+import Zen2 from "./assets/2.png";
+import Zen3 from "./assets/3.png";
+import Zen4 from "./assets/4.png";
+import Zen5 from "./assets/5.png";
+import Zen6 from "./assets/6.png";
+import Zen7 from "./assets/7.png";
+import Zen8 from "./assets/8.png";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -46,39 +54,32 @@ import WhiteBoldText from "./components/WitheBoldText";
 
 export default function Home() {
   const MeritoCientifico = [Merito, Merito2];
-  const SaintPaul = [
-    SP1,
-    SP2,
-    SP3,
-    SP4,
-    SP5,
-    SP6,
-    SP7
-  ];
+  const SaintPaul = [SP1, SP2, SP3, SP4, SP5, SP6, SP7];
+  const ZenKai = [Zen1, Zen2, Zen3, Zen4, Zen5, Zen6, Zen7, Zen8];
 
   return (
     <main className={styles.main}>
       <div className={styles.banner}>
         <div className={styles.container}>
-            <div className={styles.navBar}>
-              <a className={styles.navButton}>Sobre</a>
-              <a className={styles.navButton}>Projetos</a>
-              <a className={styles.navButton}>Contatos</a>
-            </div>
+          <div className={styles.navBar}>
+            <a className={styles.navButton}>Sobre</a>
+            <a className={styles.navButton}>Projetos</a>
+            <a className={styles.navButton}>Contatos</a>
+          </div>
 
-            <div className={styles.bannerContent}>
-              <Image className={styles.perfil} src={perfil} alt="Perfil" />
-              <h1 className={styles.bannerTitle}>
-                Matheus Saito - Engenheiro de Software
-              </h1>
+          <div className={styles.bannerContent}>
+            <Image className={styles.perfil} src={perfil} alt="Perfil" />
+            <h1 className={styles.bannerTitle}>
+              Matheus Saito - Engenheiro de Software
+            </h1>
 
-              <h2
-                className={styles.bannerTitle}
-              >{`<Desenvolvimento Fullstack e Mobile />`}</h2>
-              <p className={styles.resume}>
-                {`Graduado em Engenharia de Software pela Universidade Evangélica de Goias - Uni Evangélica. Atuo como Desenvolvedor FullStack e Mobile desde 2021, desenvolvendo soluções para área da saúde e setor imobiliário com as stacks de NodeJS React, React Native Express e Python com o Flask.  \nCom participação em pesquisas cientificas e de inovação.`}
-              </p>
-            </div>
+            <h2
+              className={styles.bannerTitle}
+            >{`<Desenvolvimento Fullstack e Mobile />`}</h2>
+            <p className={styles.resume}>
+              {`Graduado em Engenharia de Software pela Universidade Evangélica de Goias - Uni Evangélica. Atuo como Desenvolvedor FullStack e Mobile desde 2021, desenvolvendo soluções para área da saúde e setor imobiliário com as stacks de NodeJS React, React Native Express e Python com o Flask.  \nCom participação em pesquisas cientificas e de inovação.`}
+            </p>
+          </div>
 
           <div className={styles.row}>
             <a className={styles.button}>
@@ -143,14 +144,15 @@ export default function Home() {
                 <VSlider images={MeritoCientifico} />
               </div>
 
-              <WhiteText text="Envolvido em pesquisas científicas e no desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
-           
-              <a className={styles.buttonWhiteCV}>
-                    <div className={styles.row}>
-                      <p className={styles.buttonTitleWhite}>Baixar CV</p>
-                    </div>
-                  </a>
-           
+              <WhiteText text="Envolvido em pesquisas para desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
+
+              <div className={styles.center}>
+                <a className={styles.buttonWhiteCV}>
+                  <div className={styles.row}>
+                    <p className={styles.buttonTitleWhite}>Baixar CV</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -230,7 +232,7 @@ export default function Home() {
               <WhiteText text="Desenvolvida para atender a demanda de atendimento online para Psicologia e Psiquiatria. Web e Mobile com funcionalidades de agendamento, avaliações emocionais e diário de humor." />
 
               <div className={styles.center}>
-                <HSlider images={MeritoCientifico} />
+                <HSlider images={ZenKai} />
               </div>
 
               <WhiteText text="Inicialmente chamado de Psique, o projeto foi iniciado durante o programa de Iniciação Tecnológica da UniEvangélica, a ideia surgiu da percepção da dificuldade de uso da tecnologia pela terapeuta particular durante a pandemia de Covid-19." />
