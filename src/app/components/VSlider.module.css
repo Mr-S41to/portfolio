@@ -33,12 +33,13 @@
 
 .dots {
   position: absolute;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 20px;
+  height: 18px;
   background-color: #f3f3f3;
-  padding-top: 2.5px;
+  padding-top: 4px;
   gap: 5px;
 }
 
@@ -53,10 +54,4 @@
 
 .activeDot {
   background-color: #250050;
-}
-
-@media (min-width: 640px) {
-  .slideWrapper {
-    height: 24rem;
-  }
 }

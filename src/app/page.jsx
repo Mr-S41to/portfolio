@@ -57,6 +57,12 @@ export default function Home() {
   const SaintPaul = [SP1, SP2, SP3, SP4, SP5, SP6, SP7];
   const ZenKai = [Zen1, Zen2, Zen3, Zen4, Zen5, Zen6, Zen7, Zen8];
 
+  const LinkedInUrl = "https://linkedin.com/in/matheusnsaito";
+  const GithubUrl = "https://github.com/Mr-S41to";
+  const WhatsAppUrl = "https://api.whatsapp.com/send?phone=5562983045040";
+  const eMailUrl = "mailto:matheusnsaito@outlook.com?subject=Olá,%20vim%20pelo%20seu%20portfólio";
+  const CVUrl = "CVMatheusSaito.pdf";
+
   return (
     <main className={styles.main}>
       <div className={styles.banner}>
@@ -82,7 +88,7 @@ export default function Home() {
           </div>
 
           <div className={styles.row}>
-            <a className={styles.button}>
+            <a className={styles.button} href={GithubUrl} target="_blank">
               <div className={styles.row}>
                 <Image
                   className={styles.icons}
@@ -93,7 +99,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a className={styles.button}>
+            <a className={styles.button} href={LinkedInUrl} target="_blank">
               <div className={styles.row}>
                 <Image
                   className={styles.icons}
@@ -104,7 +110,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a className={styles.button}>
+            <a className={styles.button} href={WhatsAppUrl} target="_blank">
               <div className={styles.row}>
                 <Image
                   className={styles.icons}
@@ -115,7 +121,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a className={styles.button}>
+            <a className={styles.button} href={eMailUrl}>
               <div className={styles.row}>
                 <Image
                   className={styles.icons}
@@ -147,7 +153,7 @@ export default function Home() {
               <WhiteText text="Envolvido em pesquisas para desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
 
               <div className={styles.center}>
-                <a className={styles.buttonWhiteCV}>
+                <a className={styles.buttonWhiteCV} href={CVUrl} download>
                   <div className={styles.row}>
                     <p className={styles.buttonTitleWhite}>Baixar CV</p>
                   </div>
@@ -422,7 +428,7 @@ export default function Home() {
           <div className={styles.halfDiv}>
             <div className={styles.center}>
               <div className={styles.glass}>
-                <a className={styles.buttonContact}>
+                <a className={styles.buttonContact} href={eMailUrl} target="_blank">
                   <div className={styles.row}>
                     <p className={styles.buttonTitleContact}>E-Mail</p>
                     <Image
@@ -433,7 +439,7 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a className={styles.buttonContact}>
+                <a className={styles.buttonContact} href={WhatsAppUrl} target="_blank">
                   <div className={styles.row}>
                     <p className={styles.buttonTitleContact}>WhatsApp</p>
                     <Image
@@ -444,7 +450,7 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a className={styles.buttonContact}>
+                <a className={styles.buttonContact} href={LinkedInUrl} target="_blank">
                   <div className={styles.row}>
                     <p className={styles.buttonTitleContact}>LinkedIn </p>
                     <Image
@@ -455,7 +461,7 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a className={styles.buttonContact}>
+                <a className={styles.buttonContact} href={GithubUrl} target="_blank">
                   <div className={styles.row}>
                     <p className={styles.buttonTitleContact}>Github</p>
                     <Image
@@ -475,7 +481,7 @@ export default function Home() {
                 <div className={styles.center}>
                   <Image className={styles.asset} src={Tech} alt="Ilustração" />
 
-                  <a className={styles.buttonBlackCV}>
+                  <a className={styles.buttonBlackCV} href={CVUrl} download>
                     <div className={styles.row}>
                       <p className={styles.buttonTitleBlack}>Baixar CV</p>
                     </div>
