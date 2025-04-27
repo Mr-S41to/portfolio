@@ -10,7 +10,7 @@
   transform: scale(1);
 }
 .container:hover{
-  scale: 1.5;
+  scale: 1.15;
   transition: all 0.7s ease;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -64,8 +64,13 @@
   background-color: #250050;
 }
 
-@media (min-width: 640px) {
-  .slideWrapper {
-    height: 24rem;
-  }
+@media (max-width: 768px) {
+ .container{
+  width: 320px;
+  height: 180px;
+  margin: 20px;
+ }
+ .container:hover{
+  scale: 1.1;
+ }
 }

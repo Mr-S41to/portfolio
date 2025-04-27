@@ -4,3 +4,9 @@
     margin-inline-end: 60px;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .text {
+        margin-inline-end: 0;
+    }
+}
