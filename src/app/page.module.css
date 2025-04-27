@@ -14,17 +14,28 @@
   font-style: italic;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b1b;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1b1b1b;
+  max-width: 1920px;
 }
 
 .banner {
   width: 100%;
   height: 100vh;
+  max-height: 1080px;
   background-image: url("./assets/BannerBg.png");
   background-position: center;
   background-size: cover;
@@ -88,9 +99,12 @@
   display: flex;
   flex-direction: row;
   padding: 10px;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   z-index: 10;
   background-color: #250050;
@@ -111,9 +125,9 @@
 
 /* Conteudo Banner */
 .perfil {
-  width: 250px;
-  height: 250px;
-  margin-top: 40px;
+  width: 240px;
+  height: 240px;
+  margin-top: 80px;
   margin-bottom: 10px;
   animation-name: transparent;
   animation-duration: 1s;
@@ -126,6 +140,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
+  max-height: 720px;
 }
 
 .bannerTitle {
@@ -143,7 +158,7 @@
   width: 70%;
   animation-name: transparent;
   animation-duration: 1s;
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
 }
 
 /* Logos de Tecnologias */
@@ -197,7 +212,7 @@
   align-items: center;
   justify-content: center;
   width: 140px;
-  margin: 20px;
+  margin: 40px;
   height: 40px;
   background-color: #250050;
   border-radius: 8px;
@@ -223,6 +238,7 @@
   margin-inline-end: 10px;
   color: #ffffff;
 }
+
 .button:hover {
   scale: 1.05;
   transition: all 0.5s ease;
@@ -273,7 +289,7 @@
   transition: all 0.7s ease;
   transform: scale(1);
 }
-.gif:hover{
+.gif:hover {
   scale: 1.15;
   transition: all 0.7s ease;
   margin-top: 10%;
@@ -284,9 +300,9 @@
   width: 12%;
   height: auto;
   margin: 40px;
-  border-radius: 8px;;
+  border-radius: 8px;
 }
-.imageBox{
+.imageBox {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -457,6 +473,8 @@
 
 @media (max-width: 768px) {
   .banner {
+    height: auto;
+    padding-bottom: 20px;
     background-image: url("./assets/BannerMobile.png");
   }
 
@@ -464,17 +482,14 @@
     padding-top: 12px;
   }
 
-  .banner{
-    height: auto;
-  }
-
-  .bannerContent{
+  .bannerContent {
     display: flex;
+    padding: 20px;
   }
 
   .perfil {
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     margin: 20px;
     margin-top: 60px;
   }
@@ -490,9 +505,12 @@
     text-align: center;
   }
 
-  .button{
+  .button {
     width: 85%;
-    .row{
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .row {
       flex-direction: row;
     }
   }
@@ -507,7 +525,7 @@
     width: 100%;
   }
 
-  .iconBox{
+  .iconBox {
     align-self: flex-start;
     width: 100%;
   }
@@ -524,54 +542,54 @@
     width: 60%;
   }
 
-  .imageBox{
+  .imageBox {
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .logo{
+  .logo {
     width: 40px;
     height: 40px;
   }
-  
-  .buttonWhiteCV{
+
+  .buttonWhiteCV {
     margin-bottom: 40px;
     width: 100%;
   }
 
-  .buttonBlackCV{
+  .buttonBlackCV {
     margin-bottom: 40px;
     width: 100%;
   }
 
-  .footerText{
+  .footerText {
     text-align: center;
   }
 
-  .glass{
-    width:  85%;
+  .glass {
+    width: 85%;
     height: auto;
     margin-top: 80px;
     margin-bottom: 80px;
   }
 
-  .buttonContact{
+  .buttonContact {
     width: 100%;
     height: 50px;
     margin: 20px;
-    .row{
+    .row {
       flex-direction: row;
     }
   }
 
-  .gif{
+  .gif {
     width: 320px;
     height: auto;
     margin: 20px;
   }
-  .gif:hover{
+  .gif:hover {
     scale: 1.1;
   }
 }
