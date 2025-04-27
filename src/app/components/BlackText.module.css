@@ -7,7 +7,6 @@
 
 @media (max-width: 768px) {
     .text {
-        margin-inline: 20px;
         margin-inline-end: 0;
     }
 }
