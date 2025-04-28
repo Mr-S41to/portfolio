@@ -70,9 +70,18 @@ export default function Home() {
         <div className={styles.banner}>
           <div className={styles.container}>
             <div className={styles.navBar}>
-              <a className={styles.navButton}>Sobre</a>
-              <a className={styles.navButton}>Projetos</a>
-              <a className={styles.navButton}>Contatos</a>
+              <a className={styles.navButton} href="#">
+                Início
+              </a>
+              <a className={styles.navButton} href="#Sobre">
+                Sobre
+              </a>
+              <a className={styles.navButton} href="#Projetos">
+                Projetos
+              </a>
+              <a className={styles.navButton} href="#Contatos">
+                Contatos
+              </a>
             </div>
 
             <div className={styles.bannerContent}>
@@ -137,22 +146,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.container}>
+        <div className={styles.container} id="Sobre">
           <div className={styles.row}>
             <div className={styles.halfDiv}>
               <div className={styles.content}>
                 <SubTitle subTitle={`<Sobre />`} />
 
-                <WhiteText text="Graduado em Engenharia de Software pela UniEvangélica em 2024, apaixonado por tecnologia e desenvolvimento de soluções que realmente fazem diferença." />
+                <WhiteText text="Graduado em Engenharia de Software pela UniEvangélica em 2024, apaixonado por tecnologia e desenvolvimento de soluções que fazem diferença." />
 
                 <WhiteText text="Ao longo da minha jornada, atuei em projetos nas áreas de saúde, setor imobiliário, desenvolvendo desde sistemas web completos até aplicações mobile com foco em usabilidade e performance." />
 
-                {/* Merito cientifico. */}
                 <div className={styles.center}>
                   <VSlider images={MeritoCientifico} />
                 </div>
 
-                <WhiteText text="Envolvido em pesquisas para desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
+                <WhiteText text="Envolvido em pesquisas durante a graduação para desenvolvimento de projetos com impacto social, como uma plataforma de telemedicina focada em saúde mental e em um app de detecção de fototipos de pele. Sempre em busca de desafios que ajudem a evoluir como desenvolvedor e a gerar valor em produtos inovadores." />
 
                 <div className={styles.center}>
                   <a className={styles.buttonWhiteCV} href={CVUrl} download>
@@ -187,7 +195,7 @@ export default function Home() {
                 <WhiteText text="Experiências com tecnologias como React, React Native, Node.js, Python e Express, conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile." />
               </div>
 
-              <div className={styles.whiteDiv}>
+              <div className={styles.whiteDiv} id="Projetos">
                 <div className={styles.content}>
                   <BlackSubTitle subTitle={`<Projetos />`} />
 
@@ -337,7 +345,9 @@ export default function Home() {
                 <WhiteText text="O objetivo é que o usuário some o número atual com o número anterior e selecione a resposta correta clicando no botão correspondente. Cada número é gerado e pronunciado em um intervalo inicial de 2 segundos, criando um ritmo constante para as interações. O teste avalia a capacidade de realizar operações mentais rápidas e lidar com o estresse do tempo limitado e da pressão gerada por interações contínuas." />
 
                 <div className={styles.center}>
-                  <Image src={Loyse} alt="Loyse" className={styles.gif} />
+                  <video controls className={styles.gif}>
+                    <source src="/TestedePasat.mp4" type="video/mp4" />
+                  </video>
                 </div>
 
                 <WhiteText text="Desenvolvido com React JS, SpeechSynthesis para falar os numeros do teste." />
@@ -426,10 +436,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.content}>
-            <p> </p>
-          </div>
-          <div className={styles.content}>
+
+          <div className={styles.content} id="Contatos">
             <SubTitle subTitle={`<Contatos />`} />
             <WhiteText text="Entre em contato e confira meu Github por:" />
           </div>

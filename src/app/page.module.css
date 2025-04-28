@@ -167,7 +167,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .logo {
@@ -297,7 +297,7 @@
 }
 
 .photoTom {
-  width: 12%;
+  width: 14%;
   height: auto;
   margin: 40px;
   border-radius: 8px;
