@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 //CSS.
 import styles from "./page.module.css";
@@ -42,6 +43,15 @@ import Zen5 from "./assets/5.png";
 import Zen6 from "./assets/6.png";
 import Zen7 from "./assets/7.png";
 import Zen8 from "./assets/8.png";
+import Zem9 from "./assets/9.png";
+import Zem10 from "./assets/10.png";
+import Zem11 from "./assets/11.png";
+import Zem12 from "./assets/12.png";
+import Zem13 from "./assets/13.png";
+import Zem14 from "./assets/14.png";
+import Zem15 from "./assets/15.png";
+import Zem16 from "./assets/16.png";
+import Zenkai from "./assets/Zenkai.gif";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -51,6 +61,8 @@ import BlackText from "./components/BlackText";
 import BlackBoldText from "./components/BlackBoldText";
 import HSlider from "./components/HSlider";
 import WhiteBoldText from "./components/WitheBoldText";
+// Hooks
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const MeritoCientifico = [Merito, Merito2];
@@ -63,6 +75,28 @@ export default function Home() {
   const eMailUrl =
     "mailto:matheusnsaito@outlook.com?subject=Olá,%20vim%20pelo%20seu%20portfólio";
   const CVUrl = "CVMatheusSaito.pdf";
+
+  //Funnção para verificar se o dispositivo é mobile e renderizar sessão da landing page Loyse apos Zenkai.
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // FUnção para Web.
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+  useEffect(() => {
+    function handleResize() {
+      setIsDesktop(window.innerWidth > 768);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <body className={styles.body}>
@@ -257,9 +291,15 @@ export default function Home() {
 
                 <WhiteText text="Inicialmente chamado de Psique, o projeto foi iniciado durante o programa de Iniciação Tecnológica da UniEvangélica, a ideia surgiu da percepção da dificuldade de uso da tecnologia pela terapeuta particular durante a pandemia de Covid-19." />
                 <WhiteText text="Na virada de 2024 para 2025, o projeto foi selecionado para participar do NIIS II do HubGoias, na imersão de negócios onde foi reestruturado e renomeado para ZenKai." />
+              </div>
+            </div>
+
+            <div className={styles.halfDiv}>
+              <div className={styles.content}>
+                <WhiteText text="Desenvolvido com React para a interface Web para profissionais, React Native para um App Mobile, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL." />
 
                 <div className={styles.center}>
-                  <Image src={Loyse} alt="Loyse" className={styles.gif} />
+                  <Image src={Zenkai} alt="Zenkai" className={styles.zenkaiGif} />
                 </div>
 
                 <WhiteBoldText text="Tecnologias:" />
@@ -305,12 +345,32 @@ export default function Home() {
                     <p className={styles.buttonTitleProject}>Em Breve</p>
                   </a>
                 </div>
-                <WhiteText text="Desenvolvido com React para a interface Web para profissionais, React Native para um App Mobile, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL." />
               </div>
             </div>
+          </div>
 
-            <div className={styles.halfDiv}>
-              <div className={styles.content}>
+          {/* Continuação Conteudo Zenkai  Continuação */}
+          <div className={styles.content}>
+            <div className={styles.row}>
+              <Image src={Zem9} alt="Login" className={styles.zenkai} />
+              <Image src={Zem10} alt="Home" className={styles.zenkai} />
+              <Image
+                src={Zem11}
+                alt="Profissionais"
+                className={styles.zenkai}
+              />
+              <Image
+                src={Zem13}
+                alt="Perfil Profissional"
+                className={styles.zenkai}
+              />
+              <Image src={Zem15} alt="Agendamentos" className={styles.zenkai} />
+            </div>
+
+            {/* Div quebra de espaçamento. */}
+            <div className={styles.content}></div>
+            <div className={styles.row}>
+              <div className={styles.halfDiv}>
                 <WhiteBoldText text="Loyse Pogiam - Landing Page" />
                 <WhiteText text="Landing Page para apresentação profissional de psicóloga." />
 
@@ -339,16 +399,19 @@ export default function Home() {
                     <p className={styles.buttonTitleProject}>Ver Projeto</p>
                   </a>
                 </div>
+              </div>
 
+              <div className={styles.halfDiv}>
                 <WhiteBoldText text="Teste de PASAT (Paced Auditory Serial Addition Task)" />
                 <WhiteText text="Este projeto teve como objetivo desenvolver a tradução do teste PASAT para o português brasileiro, para a aplicação do teste em pacientes que falam português. E teste foi desnevolvido em apoio a um grupo de pesquisa do Curso de Medicina da UniEvangélica." />
-                <WhiteText text="O objetivo é que o usuário some o número atual com o número anterior e selecione a resposta correta clicando no botão correspondente. Cada número é gerado e pronunciado em um intervalo inicial de 2 segundos, criando um ritmo constante para as interações. O teste avalia a capacidade de realizar operações mentais rápidas e lidar com o estresse do tempo limitado e da pressão gerada por interações contínuas." />
 
                 <div className={styles.center}>
                   <video controls className={styles.gif}>
                     <source src="/TestedePasat.mp4" type="video/mp4" />
                   </video>
                 </div>
+
+                <WhiteText text="O objetivo é que o usuário some o número atual com o número anterior e selecione a resposta correta clicando no botão correspondente. Cada número é gerado e pronunciado em um intervalo inicial de 2 segundos, criando um ritmo constante para as interações. O teste avalia a capacidade de realizar operações mentais rápidas e lidar com o estresse do tempo limitado e da pressão gerada por interações contínuas." />
 
                 <WhiteText text="Desenvolvido com React JS, SpeechSynthesis para falar os numeros do teste." />
                 <WhiteBoldText text="Tecnologias:" />

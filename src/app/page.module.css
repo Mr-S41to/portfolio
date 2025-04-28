@@ -290,18 +290,40 @@
   transform: scale(1);
 }
 .gif:hover {
-  scale: 1.15;
-  transition: all 0.7s ease;
   margin-top: 10%;
   margin-bottom: 10%;
+  scale: 1.15;
+  transition: all 0.7s ease;
+}
+
+.zenkai {
+  width: 15%;
+  height: auto;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.zenkaiGif {
+  width: 240px;
+  height: auto;
+  margin: 20px;
+  border-radius: 8px;
+  transition: all 0.7s ease;
+  transform: scale(1);
+}
+.zenkaiGif:hover {
+  scale: 1.15;
+  transition: all 0.7s ease;
+  margin: 10%;
 }
 
 .photoTom {
   width: 14%;
   height: auto;
-  margin: 40px;
+  margin: 20px;
   border-radius: 8px;
 }
+
 .imageBox {
   width: 100%;
   display: flex;
@@ -538,6 +560,11 @@
     margin-inline: 0;
   }
 
+  .zenkai {
+    margin: 20px;
+    width: 60%;
+  }
+
   .photoTom {
     margin: 20px;
     width: 60%;
@@ -592,6 +619,16 @@
   }
   .gif:hover {
     scale: 1.1;
+  }
+
+  .zenkaiGif {
+    width: 60%;
+    height: auto;
+    margin: 20px;
+  }
+  .zenkaiGif:hover {
+    margin-top: 20%;
+    margin-bottom: 20%;
   }
 }
 
