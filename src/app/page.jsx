@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 //CSS.
 import styles from "./page.module.css";
@@ -61,8 +60,6 @@ import BlackText from "./components/BlackText";
 import BlackBoldText from "./components/BlackBoldText";
 import HSlider from "./components/HSlider";
 import WhiteBoldText from "./components/WitheBoldText";
-// Hooks
-import { useState, useEffect } from "react";
 
 export default function Home() {
   const MeritoCientifico = [Merito, Merito2];
@@ -75,28 +72,6 @@ export default function Home() {
   const eMailUrl =
     "mailto:matheusnsaito@outlook.com?subject=Olá,%20vim%20pelo%20seu%20portfólio";
   const CVUrl = "CVMatheusSaito.pdf";
-
-  //Funnção para verificar se o dispositivo é mobile e renderizar sessão da landing page Loyse apos Zenkai.
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // FUnção para Web.
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-  useEffect(() => {
-    function handleResize() {
-      setIsDesktop(window.innerWidth > 768);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <body className={styles.body}>
