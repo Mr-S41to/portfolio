@@ -495,7 +495,7 @@
 
 @media (max-width: 768px) {
   .banner {
-    max-height: 100vh;
+    max-height: auto;
     padding-bottom: 20px;
     background-image: url("./assets/BannerMobile.png");
   }
@@ -583,6 +583,7 @@
   }
 
   .buttonWhiteCV {
+    margin-top: 80px;
     margin-bottom: 40px;
     width: 100%;
   }
