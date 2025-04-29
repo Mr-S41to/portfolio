@@ -495,7 +495,7 @@
 
 @media (max-width: 768px) {
   .banner {
-    max-height: auto;
+    height: auto;
     padding-bottom: 20px;
     background-image: url("./assets/BannerMobile.png");
   }
