@@ -19,6 +19,8 @@ import WordPress from "./assets/WordPress.png";
 import Python from "./assets/Python.png";
 import Merito from "./assets/MeritoCientifico.jpg";
 import Merito2 from "./assets/MeritoCientifico2.jpg";
+import SelfieFormatura from "./assets/SelfieFormatura.jpg";
+import Formatura from "./assets/Formatura.jpg";
 import Loyse from "./assets/Loyse.gif";
 import Android from "./assets/Android.png";
 import iOS from "./assets/iOS.png";
@@ -55,6 +57,7 @@ import Zem14 from "./assets/14.png";
 import Zem15 from "./assets/15.png";
 import Zem16 from "./assets/16.png";
 import Zenkai from "./assets/Zenkai.gif";
+import ArteSamurai from "./assets/ArteSamurai.png";
 //Components
 import SubTitle from "./components/SubTitle";
 import WhiteText from "./components/WhiteText";
@@ -66,7 +69,7 @@ import HSlider from "./components/HSlider";
 import WhiteBoldText from "./components/WitheBoldText";
 
 export default function Home() {
-  const MeritoCientifico = [Merito, Merito2];
+  const MeritoCientifico = [Merito, Merito2, SelfieFormatura, Formatura];
   const SaintPaul = [SP1, SP2, SP3, SP4, SP5, SP6, SP7];
   const ZenKai = [Zen1, Zen2, Zen3, Zen4, Zen5, Zen6, Zen7, Zen8];
 
