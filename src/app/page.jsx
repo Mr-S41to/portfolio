@@ -13,7 +13,7 @@ import JS from "./assets/JS.png";
 import React from "./assets/React.png";
 import Express from "./assets/Express.png";
 import Git from "./assets/Git.png";
-import Github from "./assets/Github.png";
+import Github from "./assets/Github-Logo.png";
 import MySQL from "./assets/MySQL.png";
 import WordPress from "./assets/WordPress.png";
 import Python from "./assets/Python.png";
