@@ -7,6 +7,8 @@ import linkedin from "./assets/linkedin.png";
 import whatsapp from "./assets/whatsapp.png";
 import eMail from "./assets/eMail.png";
 import perfil from "./assets/Perfil.png";
+import HTML from "./assets/HTML.png";
+import CSS from "./assets/CSS.png";
 import JS from "./assets/JS.png";
 import React from "./assets/React.png";
 import Express from "./assets/Express.png";
@@ -20,6 +22,8 @@ import Merito2 from "./assets/MeritoCientifico2.jpg";
 import Loyse from "./assets/Loyse.gif";
 import Android from "./assets/Android.png";
 import iOS from "./assets/iOS.png";
+import AndroidStudio from "./assets/AndroidStudio.png";
+import Figma from "./assets/Figma.png";
 import NativeBase from "./assets/NativeBase.png";
 import PhotoTom1 from "./assets/PhotoTom1.jpg";
 import PhotoTom2 from "./assets/PhotoTom2.jpg";
@@ -183,6 +187,8 @@ export default function Home() {
 
             <div className={styles.halfDiv}>
               <div className={styles.logoContainer}>
+                <Image className={styles.logo} src={HTML} alt="Logo HTML" />
+                <Image className={styles.logo} src={CSS} alt="Logo CSS" />
                 <Image className={styles.logo} src={JS} alt="Logo JS" />
                 <Image className={styles.logo} src={React} alt="Logo React" />
                 <Image
@@ -191,17 +197,31 @@ export default function Home() {
                   alt="Logo Express"
                 />
                 <Image className={styles.logo} src={MySQL} alt="Logo MySQL" />
+              </div>
+
+              <div className={styles.logoContainer}>
                 <Image className={styles.logo} src={Git} alt="Logo Git" />
                 <Image className={styles.logo} src={Github} alt="Logo Github" />
+                <Image
+                  className={styles.logo}
+                  src={AndroidStudio}
+                  alt="Logo Android Studio"
+                />
+                <Image
+                  className={styles.logo}
+                  src={NativeBase}
+                  alt="Logo Native Base"
+                />
                 <Image
                   className={styles.logo}
                   src={WordPress}
                   alt="Logo WordPress"
                 />
+                <Image className={styles.logo} src={Figma} alt="Logo Figma" />
               </div>
 
               <div className={styles.content}>
-                <WhiteText text="Experiências com tecnologias como React, React Native, Node.js, Python e Express, conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile." />
+                <WhiteText text="Experiências com tecnologias como React, React Native e Native Base, Node.js, Python e Express, MySQL. Conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile ferramentas com Android Studio e Figma." />
               </div>
 
               <div className={styles.whiteDiv} id="Projetos">
@@ -274,7 +294,11 @@ export default function Home() {
                 <WhiteText text="Desenvolvido com React para a interface Web para profissionais, React Native para um App Mobile, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL." />
 
                 <div className={styles.center}>
-                  <Image src={Zenkai} alt="Zenkai" className={styles.zenkaiGif} />
+                  <Image
+                    src={Zenkai}
+                    alt="Zenkai"
+                    className={styles.zenkaiGif}
+                  />
                 </div>
 
                 <WhiteBoldText text="Tecnologias:" />
