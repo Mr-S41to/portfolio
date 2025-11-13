@@ -528,6 +528,7 @@
   }
 
   .halfDiv {
+    display: flex;
     width: 100%;
   }
 
