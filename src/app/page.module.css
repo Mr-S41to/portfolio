@@ -19,8 +19,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: #1b1b1b;
 }
 
@@ -524,7 +522,7 @@
   .container {
     padding: 20px;
   }
-  
+
   .resume {
     font-size: 12px;
     padding-inline: 20px;
