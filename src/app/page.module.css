@@ -160,9 +160,9 @@
 
 /* Logos de Tecnologias */
 .logoContainer {
+  display: flex;
   align-self: center;
   width: max-content;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
