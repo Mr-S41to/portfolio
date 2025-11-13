@@ -160,10 +160,13 @@
 
 /* Logos de Tecnologias */
 .logoContainer {
+  align-self: center;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin: 40px 20px;
 }
 
