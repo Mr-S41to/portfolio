@@ -521,6 +521,10 @@
     text-align: center;
   }
 
+  .container {
+    padding: 20px;
+  }
+  
   .resume {
     font-size: 12px;
     padding-inline: 20px;
