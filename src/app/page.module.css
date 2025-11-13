@@ -69,6 +69,13 @@
   justify-content: center;
 }
 
+
+  .div{
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  
 .whiteDiv {
   background-color: #ffffff;
   border-radius: 40px 0 0 0;
