@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   max-width: 1920px;
-  margin: 0 40px
+  padding: 0 40px
 }
 
 .banner {
@@ -519,6 +519,10 @@
 
   .bannerTitle {
     text-align: center;
+  }
+
+  .container{
+    padding: 40px;
   }
 
   .resume {
