@@ -223,50 +223,48 @@ export default function Home() {
               <div className={styles.content}>
                 <WhiteText text="Experiências com tecnologias como React, React Native e Native Base, Node.js, Python e Express, MySQL. Conhecimentos em versionamento de código com Git, componentização e arquitetura de software, processamento de dados utilizando expressões regulares, integração de APIs e criação de interfaces intuitivas tanto em web quanto em mobile ferramentas com Android Studio e Figma." />
               </div>
+              
+              <div className={styles.whiteDiv} id="Projetos">
+                <div className={styles.content}>
+                  <BlackSubTitle subTitle={`<Projetos />`} />
 
-              <div className={styles.div}>
-                <div className={styles.whiteDiv} id="Projetos">
-                  <div className={styles.content}>
-                    <BlackSubTitle subTitle={`<Projetos />`} />
+                  <BlackBoldText text="Saint Paul - Analise de Débitos" />
 
-                    <BlackBoldText text="Saint Paul - Analise de Débitos" />
-
-                    <BlackText text="Sistema Web para Análise de Débitos e cruzamento de dados através de PDFs emitidos pela prefeitura de Anápolis." />
-                    <div className={styles.center}>
-                      <HSlider images={SaintPaul} />
-                    </div>
-                    <BlackText text="O sistema também conta com um modulo de Gerência de Vistorias e Emissão de Laudos. Desenvolvido para ser hosteado em ambiente Windows em rede local a pedido da empresa via Docker" />
-
-                    <BlackBoldText text="Tecnologias:" />
-                    <div className={styles.row}>
-                      <div className={styles.iconBox}>
-                        <Image
-                          className={styles.miniLogo}
-                          src={React}
-                          alt="Logo React"
-                        />
-                        <Image
-                          className={styles.miniLogo}
-                          src={Python}
-                          alt="Logo Python"
-                        />
-                        <Image
-                          className={styles.miniLogo}
-                          src={Express}
-                          alt="Logo Express"
-                        />
-                        <Image
-                          className={styles.miniLogo}
-                          src={MySQL}
-                          alt="Logo MySQL"
-                        />
-                      </div>
-                      <div className={styles.halfDiv}>
-                        <p>{` `}</p>
-                      </div>
-                    </div>
-                    <BlackText text="Desenvolvido com React para a interface Web, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL. O sistema utiliza Python com a biblioteca Pandas para realizar a leitura dos aquivos PDF para tratar os dados em texto e modelar os débitos em data frames para fazer o cruzamento de dados dos imoveis dos extratos com o banco de dados da empresa par atribuir a responsabilidade dos débitos a cliente ou empresa e emitir Relatórios de Dívidas em Excel." />
+                  <BlackText text="Sistema Web para Análise de Débitos e cruzamento de dados através de PDFs emitidos pela prefeitura de Anápolis." />
+                  <div className={styles.center}>
+                    <HSlider images={SaintPaul} />
                   </div>
+                  <BlackText text="O sistema também conta com um modulo de Gerência de Vistorias e Emissão de Laudos. Desenvolvido para ser hosteado em ambiente Windows em rede local a pedido da empresa via Docker" />
+
+                  <BlackBoldText text="Tecnologias:" />
+                  <div className={styles.row}>
+                    <div className={styles.iconBox}>
+                      <Image
+                        className={styles.miniLogo}
+                        src={React}
+                        alt="Logo React"
+                      />
+                      <Image
+                        className={styles.miniLogo}
+                        src={Python}
+                        alt="Logo Python"
+                      />
+                      <Image
+                        className={styles.miniLogo}
+                        src={Express}
+                        alt="Logo Express"
+                      />
+                      <Image
+                        className={styles.miniLogo}
+                        src={MySQL}
+                        alt="Logo MySQL"
+                      />
+                    </div>
+                    <div className={styles.halfDiv}>
+                      <p>{` `}</p>
+                    </div>
+                  </div>
+                  <BlackText text="Desenvolvido com React para a interface Web, Node.js para Back-End Express e Sequelize ORM para definir as models e gerenciar a integração com o MySQL. O sistema utiliza Python com a biblioteca Pandas para realizar a leitura dos aquivos PDF para tratar os dados em texto e modelar os débitos em data frames para fazer o cruzamento de dados dos imoveis dos extratos com o banco de dados da empresa par atribuir a responsabilidade dos débitos a cliente ou empresa e emitir Relatórios de Dívidas em Excel." />
                 </div>
               </div>
             </div>
@@ -574,22 +572,20 @@ export default function Home() {
             </div>
 
             <div className={styles.halfDiv}>
-              <div className={styles.div}>
-                <div className={styles.whiteDiv}>
-                  <div className={styles.content}>
-                    <div className={styles.center}>
-                      <Image
-                        className={styles.asset}
-                        src={Tech}
-                        alt="Ilustração"
-                      />
+              <div className={styles.whiteDiv}>
+                <div className={styles.content}>
+                  <div className={styles.center}>
+                    <Image
+                      className={styles.asset}
+                      src={Tech}
+                      alt="Ilustração"
+                    />
 
-                      <a className={styles.buttonBlackCV} href={CVUrl} download>
-                        <div className={styles.row}>
-                          <p className={styles.buttonTitleBlack}>Baixar CV</p>
-                        </div>
-                      </a>
-                    </div>
+                    <a className={styles.buttonBlackCV} href={CVUrl} download>
+                      <div className={styles.row}>
+                        <p className={styles.buttonTitleBlack}>Baixar CV</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
