@@ -71,7 +71,7 @@
 
 .whiteDiv {
   background-color: #ffffff;
-  padding-top: 0;
+  margin: 0 0 0 40px;
   border-radius: 40px 0 0 0;
 }
 
@@ -165,7 +165,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 50px;
+  padding: 40px 20px
 }
 
 .logo {
@@ -609,11 +609,6 @@
     width: 60%;
     height: auto;
     margin: 20px;
-  }
-
-  .whiteDiv{
-    margin: 0 0 0 40px;
-    border-radius: 40px 0 0 0;
   }
 }
 
