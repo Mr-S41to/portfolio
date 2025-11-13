@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   background-color: #1b1b1b;
+  padding: 20px;
 }
 
 .main {
@@ -517,10 +518,6 @@
 
   .bannerTitle {
     text-align: center;
-  }
-
-  .container {
-    padding: 20px;
   }
 
   .resume {
