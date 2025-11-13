@@ -496,10 +496,9 @@
   }
 
   .perfil {
-    width: 240px;
-    height: 240px;
-    margin: 20px;
-    margin-top: 60px;
+    width: 180px;
+    height: 180px;
+    margin: 60px 20px 0 20px;
   }
 
   .bannerTitle {
@@ -610,6 +609,10 @@
     width: 60%;
     height: auto;
     margin: 20px;
+  }
+
+  .whiteDiv{
+    border-radius: 0;
   }
 }
 
