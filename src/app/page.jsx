@@ -200,9 +200,6 @@ export default function Home() {
                   alt="Logo Express"
                 />
                 <Image className={styles.logo} src={MySQL} alt="Logo MySQL" />
-              </div>
-
-              <div className={styles.logoContainer}>
                 <Image className={styles.logo} src={Git} alt="Logo Git" />
                 <Image className={styles.logo} src={Github} alt="Logo Github" />
                 <Image
