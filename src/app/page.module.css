@@ -161,7 +161,7 @@
 /* Logos de Tecnologias */
 .logoContainer {
   align-self: center;
-  width: 70%;
+  width: max-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
